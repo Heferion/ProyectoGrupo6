@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bilinguo</string>
+
+    <string name="btn_join">Join</string>
+    <string name="txt_info">Insert Word</string>
+    <string name="txt_info_fav">Favourite</string>
+</resources>

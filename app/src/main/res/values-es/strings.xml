@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bilinguo</string>
+
+    <string name="btn_join">Ingresar</string>
+    <string name="txt_info">Introduzca la Palabra</string>
+    <string name="txt_info_fav">Favoritos</string>
+</resources>
