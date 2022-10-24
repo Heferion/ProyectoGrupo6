@@ -4,4 +4,16 @@
     <string name="btn_join">Ingresar</string>
     <string name="txt_info">Introduzca la Palabra</string>
     <string name="txt_info_fav">Favoritos</string>
+    <string name="txt_en">Inglés</string>
+    <string name="txt_es">Español</string>
+    <string name="favourite">Favoritos</string>
+    <string name="content_description_favourite">Palabras favoritas</string>
+    <string name="conjugation">Conjugaciones</string>
+    <string name="content_description_conjugation">Lista de conjugaciones</string>
+    <string name="more">Más</string>
+    <string name="content_description_more">Más opciones</string>
+    <string name="userName">Usiario</string>
+    <string name="password">Contraseña</string>
+    <string name="passwordError">Contraseña Invalida</string>
+    <string name="userError">Usuario Invalido</string>
 </resources>

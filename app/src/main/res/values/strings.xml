@@ -4,4 +4,16 @@
     <string name="btn_join">Join</string>
     <string name="txt_info">Insert Word</string>
     <string name="txt_info_fav">Favourite</string>
+    <string name="txt_en">English</string>
+    <string name="txt_es">Spanish</string>
+    <string name="favourite">Favourite</string>
+    <string name="content_description_favourite">Favourite words</string>
+    <string name="conjugation">Conjugations</string>
+    <string name="content_description_conjugation">List of conjugations word</string>
+    <string name="more">More</string>
+    <string name="content_description_more">More options</string>
+    <string name="userName">User name</string>
+    <string name="password">Password</string>
+    <string name="passwordError">Invalid Password</string>
+    <string name="userError">Invalid User</string>
 </resources>
