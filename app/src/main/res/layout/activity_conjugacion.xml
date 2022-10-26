@@ -1,9 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ConjugacionActivity">
+    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ConjugacionActivity">
+    </LinearLayout>
+
+<!-- Note: A RecyclerView can also be used -->
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="100dp"
+    android:clipToPadding="false">
+
+    <!-- Scrollable content -->
+
+</androidx.core.widget.NestedScrollView>
+
+<com.google.android.material.bottomappbar.BottomAppBar
+    android:id="@+id/bottomAppBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+    app:navigationIcon="@drawable/ic_baseline_compare_arrows_24"
+    app:navigationIconTint="@color/md_theme_light_onPrimary"
+    app:menu="@menu/bottom_app_bar"
+
+    />
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:srcCompat="@drawable/ic_baseline_add_24"
+    app:backgroundTint="@color/md_theme_light_secondaryContainer"
+    app:layout_anchor="@id/bottomAppBar"
+    />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

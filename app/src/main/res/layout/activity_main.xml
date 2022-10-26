@@ -31,7 +31,7 @@
             android:id="@+id/outlinedTexUser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/userName"
+            android:hint="@string/user_name"
             app:errorEnabled="true"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 

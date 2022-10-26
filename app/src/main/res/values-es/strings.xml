@@ -12,8 +12,10 @@
     <string name="content_description_conjugation">Lista de conjugaciones</string>
     <string name="more">Más</string>
     <string name="content_description_more">Más opciones</string>
-    <string name="userName">Usiario</string>
+    <string name="user_name">Usiario</string>
     <string name="password">Contraseña</string>
-    <string name="passwordError">Contraseña Invalida</string>
-    <string name="userError">Usuario Invalido</string>
+    <string name="password_error">Contraseña Invalida</string>
+    <string name="user_error">Usuario Invalido</string>
+    <string name="btn_translate">Traducir</string>
+    <string name="content_description_translate">Traducir palabras</string>
 </resources>

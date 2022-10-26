@@ -7,15 +7,30 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import com.google.android.material.bottomappbar.BottomAppBar
 
 class TranslateActivity : AppCompatActivity() {
     private var idioma: Boolean = false
+    private var edtTranslate: EditText? =null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_translate)
         var bottomAppBar = findViewById<BottomAppBar>(R.id.bottomAppBar)
         setSupportActionBar(findViewById(R.id.bottomAppBar))
+        val fab: View = findViewById(R.id.fab)
+        edtTranslate = findViewById(R.id.textFieldTrasn)
+
+//        if(edtTranslate!!.text.toString() != ""){
+//            fab.visibility= View.VISIBLE
+//        }
+
+        fab.setOnClickListener{
+            edtTranslate!!.text = null
+//            fab.visibility= View.GONE
+        }
+
+
         bottomAppBar.setNavigationOnClickListener {
             val intento= Intent(this, TranslateActivity::class.java)
             startActivity(intento)

@@ -27,14 +27,17 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intento)
             }
             else{
-                passwordLayout.error = getString(R.string.passwordError)
+                passwordLayout.error = getString(R.string.password_error)
                 userLayout.error = null
             }
         }
         else{
-            userLayout.error = getString(R.string.userError)
+            userLayout.error = getString(R.string.user_error)
             passwordLayout.error = null
         }
+
+//        val intento= Intent(this, TranslateActivity::class.java)
+//        startActivity(intento)
 
     }
 }
