@@ -8,18 +8,29 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.bottomappbar.BottomAppBar
+import com.google.android.material.navigation.NavigationView
 
 class TranslateActivity : AppCompatActivity() {
     private var idioma: Boolean = false
     private var edtTranslate: EditText? =null
+//    private lateinit var appbarConfiguration: AppBarConfiguration
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_translate)
+
         var bottomAppBar = findViewById<BottomAppBar>(R.id.bottomAppBar)
         setSupportActionBar(findViewById(R.id.bottomAppBar))
+
         val fab: View = findViewById(R.id.fab)
         edtTranslate = findViewById(R.id.textFieldTrasn)
+
+        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
+        val navView: NavigationView = findViewById(R.id.nav_view)
+
+
+//        appbarConfiguration = AppBarConfiguration(setOf(R.id.nav_translate,R.id.nav_favorite), drawerLayout)
 
 //        if(edtTranslate!!.text.toString() != ""){
 //            fab.visibility= View.VISIBLE
@@ -36,7 +47,26 @@ class TranslateActivity : AppCompatActivity() {
             startActivity(intento)
         }
 
+        navView.setNavigationItemSelectedListener {menuItem -> when (menuItem.itemId){
+            R.id.nav_favorite -> {
+                val intento = Intent(this, FavoritosActivity::class.java)
+                startActivity(intento)
+                true
+            }
+            R.id.nav_translate -> {
+                val intento = Intent(this, TranslateActivity::class.java)
+                startActivity(intento)
+                true
+            }
+            else -> false
+        }
+
+
+        }
+
     }
+
+
 
     fun cambiarIdioma(btnChange: View){
         var botonIngles = findViewById<Button>(R.id.containerButtonEn)

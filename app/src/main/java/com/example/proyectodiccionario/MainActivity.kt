@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     fun onLogin(btn_join: View){
         val  userLayout= findViewById<TextInputLayout>(R.id.outlinedTexUser)
         val passwordLayout = findViewById<TextInputLayout>(R.id.outlinedTextPassword)
-        if (edtUserName!!.text.toString() =="jeff@gmail.com"){
+        if (edtUserName!!.text.toString() =="a"){
             if (edtPassword!!.text.toString() == "1234") {
                 userLayout.error = null
                 passwordLayout.error = null
