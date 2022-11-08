@@ -2,16 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-
     <item
         android:id="@+id/nav_translate"
         android:icon="@drawable/ic_baseline_compare_arrows_24"
         android:title="@string/btn_translate"
         android:textSize="17sp"/>
     <item
-        android:id="@+id/nav_favorite"
+        android:id="@+id/nav_todo"
         android:icon="@drawable/ic_baseline_star_24"
         android:title="@string/favourite"
+        android:textSize="17sp"/>
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="@string/txt_profile"
         android:textSize="17sp"/>
 
 </menu>

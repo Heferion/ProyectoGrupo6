@@ -18,5 +18,19 @@
     <string name="user_error">Invalid User</string>
     <string name="btn_translate">Translate</string>
     <string name="content_description_translate">Translate word</string>
+    <string name="table_c1">Pronouns</string>
+    <string name="table_c2">Verb Simple</string>
+    <string name="table_c3">Verb Continuous</string>
+    <string name="table_prou_f1">I / Yo</string>
+    <string name="table_prou_f2">You / Tú</string>
+    <string name="table_prou_f3">He, She, It /\nÉl, Ella, Eso</string>
+    <string name="table_prou_f4">We / Nosotros</string>
+    <string name="table_prou_f5">You / Ustedes</string>
+    <string name="detail_fav">Detail word</string>
+    <string name="detail_trasl">Detail word translate</string>
+    <string name="to_do_fav">Favorite word save</string>
+    <string name="to_do_trasl">Translate word save</string>
+    <string name="txt_profile">Profile</string>
+
 
 </resources>

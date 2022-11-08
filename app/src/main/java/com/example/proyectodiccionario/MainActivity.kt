@@ -17,27 +17,28 @@ class MainActivity : AppCompatActivity() {
         edtPassword = findViewById(R.id.textPassword)
     }
     fun onLogin(btn_join: View){
-        val  userLayout= findViewById<TextInputLayout>(R.id.outlinedTexUser)
-        val passwordLayout = findViewById<TextInputLayout>(R.id.outlinedTextPassword)
-        if (edtUserName!!.text.toString() =="a"){
-            if (edtPassword!!.text.toString() == "1234") {
-                userLayout.error = null
-                passwordLayout.error = null
-                val intento= Intent(this, TranslateActivity::class.java)
-                startActivity(intento)
-            }
-            else{
-                passwordLayout.error = getString(R.string.password_error)
-                userLayout.error = null
-            }
-        }
-        else{
-            userLayout.error = getString(R.string.user_error)
-            passwordLayout.error = null
-        }
+//        val  userLayout= findViewById<TextInputLayout>(R.id.outlinedTexUser)
+//        var usuario = edtUserName!!.text.toString().replace("\\s+".toRegex(), "")
+//        val passwordLayout = findViewById<TextInputLayout>(R.id.outlinedTextPassword)
+//        if (usuario =="usuario"){
+//            if (edtPassword!!.text.toString() == "1234") {
+//                userLayout.error = null
+//                passwordLayout.error = null
+//                val intento= Intent(this, TranslateActivity::class.java)
+//                startActivity(intento)
+//            }
+//            else{
+//                passwordLayout.error = getString(R.string.password_error)
+//                userLayout.error = null
+//            }
+//        }
+//        else{
+//            userLayout.error = getString(R.string.user_error)
+//            passwordLayout.error = null
+//        }
 
-//        val intento= Intent(this, TranslateActivity::class.java)
-//        startActivity(intento)
+        val intento= Intent(this, TranslateActivity::class.java)
+        startActivity(intento)
 
     }
 }
