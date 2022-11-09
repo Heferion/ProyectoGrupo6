@@ -23,7 +23,6 @@ class ToDoFragment : Fragment(){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-//        val fragmento: View = inflater.inflate(R.layout.fragment_to_do, container, false)
         val fragmento = inflater.inflate(R.layout.fragment_to_do, container, false)
 
 //        var favorita = requireArguments().getString("txtListFavP")
