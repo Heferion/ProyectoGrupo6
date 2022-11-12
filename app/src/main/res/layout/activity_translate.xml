@@ -120,9 +120,10 @@
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
                     android:text=" "
-                    android:translationY="30dp"
+                    android:translationY="20dp"
                     android:textStyle="bold"
-                    android:translationX="-8dp"/>
+                    android:translationX="-8dp"
+                    android:textSize="25dp"/>
                 <ImageView
                     android:id="@+id/imgTraslate"
                     android:layout_width="0dp"

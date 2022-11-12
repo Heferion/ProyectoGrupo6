@@ -63,8 +63,7 @@ class TranslateActivity : AppCompatActivity() {
         navView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.nav_translate -> {
-                    val intento = Intent(this, TranslateActivity::class.java)
-                    startActivity(intento)
+                    drawerLayout.closeDrawer(GravityCompat.START)
                     true
                 }
                 R.id.nav_todo -> {

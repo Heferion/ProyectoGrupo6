@@ -46,5 +46,10 @@
             app:dividerInsetEnd="16dp"/>
 
     </LinearLayout>
-
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerTodoList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 </LinearLayout>

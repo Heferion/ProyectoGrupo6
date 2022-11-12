@@ -31,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Traduccion favorita"
-            android:textSize="15sp"
+            android:textSize="20sp"
             />
         <com.google.android.material.divider.MaterialDivider
             android:layout_width="match_parent"

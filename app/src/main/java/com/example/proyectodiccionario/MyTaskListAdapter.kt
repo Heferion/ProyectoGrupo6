@@ -23,13 +23,28 @@ class MyTaskListAdapter (context: AppCompatActivity,
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        var textViewTask = holder.layout.findViewById<TextView>(R.id.txtListFavP)
-        textViewTask.text = myTaskTitles[position]
+        var textViewFav = holder.layout.findViewById<TextView>(R.id.txtListFavP)
+        textViewFav.text = myTaskTitles[position]
         var textViewTraslate = holder.layout.findViewById<TextView>(R.id.txtListFavS)
         textViewTraslate.text = myTaskTraslate[position]
-    }
+
+        holder.layout.setOnClickListener{
+            val datos = Bundle()
+            datos.putString("palabraFav",textViewFav.text as String)
+            datos.putString("palabraTrad",textViewTraslate.text as String)
+            context.getSupportFragmentManager()?.beginTransaction()
+                ?.setReorderingAllowed(true)
+                ?.replace(R.id.fragment_container_view, DetailFragment::class.java, datos, "detail")
+                ?.addToBackStack("")
+                ?.commit()
+        }
+
+        }
 
     override fun getItemCount(): Int {
         return myTaskTitles.size
     }
-}
+    }
+
+
+

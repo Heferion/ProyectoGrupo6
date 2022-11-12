@@ -11,6 +11,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavHost
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomappbar.BottomAppBar
@@ -55,7 +56,36 @@ class FavoritosActivity : AppCompatActivity() {
                 .commit()
         }
 
+        navView.setNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.nav_translate -> {
+                    val intento = Intent(this, TranslateActivity::class.java)
+                    startActivity(intento)
+                    true
+                }
+                R.id.nav_todo -> {
+                    drawerLayout.closeDrawer(GravityCompat.START)
+                    true
+                }
+                R.id.nav_profile -> {
+                    val intento = Intent(this, ConjugacionActivity::class.java)
+                    startActivity(intento)
+                    true
+                }
+                else -> false
+            }
 
+
+        }
+
+
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        val navHostFragment =supportFragmentManager.findFragmentById(R.id.fragment_container_view) as NavHostFragment
+        val navController = navHostFragment.navController
+
+        return navController.navigateUp(appbarConfiguration) || super.onSupportNavigateUp()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

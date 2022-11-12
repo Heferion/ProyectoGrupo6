@@ -21,8 +21,8 @@ class DetailFragment : Fragment(){
     ): View? {
         val fragmento = inflater.inflate(R.layout.fragment_detail, container, false)
 
-        var favorita = requireArguments().getString("txtFavorita")
-        var traduccion = requireArguments().getString("txtTraduccion")
+        var favorita = requireArguments().getString("palabraFav")
+        var traduccion = requireArguments().getString("palabraTrad")
 
 
         var textViewFavorita: TextView = fragmento.findViewById(R.id.txtDetailFav)
