@@ -31,6 +31,11 @@
     <string name="to_do_fav">Favorite word save</string>
     <string name="to_do_trasl">Translate word save</string>
     <string name="txt_profile">Profile</string>
+    <string name="txt_create_user_name">Insert User Name</string>
+    <string name="txt_create_user">Insert User Email</string>
+    <string name="txt_create_password">Insert Password</string>
+    <string name="btn_sing_up">Sing up</string>
+    <string name="txt_register_form">Register Form</string>
 
 
 </resources>

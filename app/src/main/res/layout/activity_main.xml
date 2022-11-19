@@ -68,6 +68,15 @@
             android:textSize="18sp"
             android:onClick="onLogin"
             android:text="@string/btn_join"/>
+        <Button
+            android:id="@+id/btn_sing_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:onClick="signUp"
+            android:text="@string/btn_sing_up"/>
 
 
     </LinearLayout>

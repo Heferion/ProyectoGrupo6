@@ -21,7 +21,6 @@
             tools:ignore="FragmentTagUsage"
             />
 
-
     </LinearLayout>
 </FrameLayout>
     <com.google.android.material.bottomappbar.BottomAppBar

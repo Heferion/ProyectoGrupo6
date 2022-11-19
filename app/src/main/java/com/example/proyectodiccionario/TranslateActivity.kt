@@ -1,6 +1,7 @@
 package com.example.proyectodiccionario
 
 import android.content.Intent
+import android.database.sqlite.SQLiteDatabase
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -20,6 +21,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.proyectodiccionario.R.drawable
+import com.example.proyectodiccionario.room_database.miSQLiteHelper
 import com.google.android.material.bottomappbar.BottomAppBar
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.textfield.TextInputEditText
@@ -33,6 +35,9 @@ class TranslateActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_translate)
 
+        val bundle = intent.extras
+        val dato = bundle?.getString("usuario")
+
         var bottomAppBar = findViewById<BottomAppBar>(R.id.bottomAppBar)
         setSupportActionBar(findViewById(R.id.bottomAppBar))
 
@@ -41,6 +46,10 @@ class TranslateActivity : AppCompatActivity() {
 
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
+        val hView : View  = navView.getHeaderView(0)
+        val usuario: TextView =  hView.findViewById(R.id.txtUsuario);
+        usuario.setText(dato)
+
 
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragment_container_view) as NavHostFragment
         val navController = navHostFragment.navController

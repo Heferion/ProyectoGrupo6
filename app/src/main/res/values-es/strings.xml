@@ -31,4 +31,9 @@
     <string name="to_do_fav">Palabra favorita guardada</string>
     <string name="to_do_trasl">Palabra traducida guardada</string>
     <string name="txt_profile">Cuenta</string>
+    <string name="txt_create_user_name">Ingrese su nombre</string>
+    <string name="txt_create_user">Ingrese su Correo Electronico</string>
+    <string name="txt_create_password">Ingrese su contraseña</string>
+    <string name="btn_sing_up">Registrarse</string>
+    <string name="txt_register_form">Formulario de Registro</string>
 </resources>
